@@ -1,0 +1,264 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #15171c;
+  padding: 40px;
+  margin: 20px 40px 20px;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin: 20px 0 40px;
+  padding: 20px 0 40px;
+  gap: 20px;
+}
+nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+}
+.name1 {
+  height: 80vh;
+  margin: 10vh 0 0;
+}
+.Abschnit1 {
+  display: flex;
+  flex-direction: column;
+}
+h1,
+h2 {
+  font-size: 6rem;
+  color: white;
+}
+.p10 {
+  font-size: 1.2rem;
+  color: white;
+  border: #15171c;
+  width: 50%;
+  text-align: justify;
+}
+
+.Abschnit2 {
+  display: flex;
+  flex-direction: row;
+}
+.name1Foto {
+  display: flex;
+  flex-direction: row;
+  margin: 20px o 60px;
+}
+.myFoto {
+  background-image: url(./photo_2023-10-06_09-18-23.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 20px solid #297ae3;
+  border-radius: 50%;
+
+  width: 600px;
+  height: 600px;
+  position: absolute;
+  top: 20%;
+  right: 5%;
+}
+h3 {
+  margin-top: 100px;
+  font-size: 5rem;
+  color: white;
+}
+.myFoto2 {
+  background-image: url(./photo_2023-10-06_10-57-35.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 20px solid white;
+
+  width: 600px;
+  height: 800px;
+  margin: 100px auto 50px;
+}
+.p1 {
+  font-size: 1.2rem;
+  color: white;
+  border: #15171c;
+  width: 100%;
+  text-align: justify;
+}
+h4 {
+  color: white;
+  font-size: 2rem;
+}
+h5 {
+  margin: 150px auto 40px;
+  color: white;
+  font-size: 3rem;
+  text-align: center;
+}
+.dienstleistungen {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
+}
+.items {
+  border-radius: 47px;
+
+  background-color: #232933;
+  width: 17rem;
+  height: 18rem;
+  padding: 20px;
+
+  text-align: center;
+}
+h4 {
+  margin: 20px;
+}
+p {
+  font-size: 1.2rem;
+  color: white;
+
+  text-align: center;
+}
+button {
+  height: 40px;
+  width: 100px;
+  margin: 40px;
+  border-radius: 20px;
+  background-color: #488ce4;
+}
+.A1 {
+  margin: 200px 0 0;
+}
+.gridcontainer {
+  margin: 50px 20px 0;
+  display: grid;
+
+  grid-template-areas:
+    "insta insta twit kont"
+    " teleg tub tub kont";
+  gap: 10px;
+}
+.s1 {
+  color: white;
+  font-size: 2.2rem;
+}
+.gridcontainer div {
+  padding: 10px;
+  background-color: #232933;
+}
+
+#instagram {
+  display: flex;
+  flex-direction: row;
+  grid-area: insta;
+  align-items: center;
+}
+.instagramFoto,
+.telegramFoto,
+.youtubeFoto,
+.twitterFoto {
+  margin: 20px 20px 0;
+  width: 100px;
+  padding: 10px;
+}
+
+.A2 {
+  text-align: center;
+}
+.p4 {
+  text-align: left;
+}
+#telegram {
+  grid-area: teleg;
+  display: flex;
+  flex-direction: column;
+}
+
+#youtube {
+  grid-area: tub;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+#kontakt {
+  grid-area: kont;
+}
+#twitter {
+  grid-area: twit;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (max-width: 1000px) {
+  h1,
+  h2 {
+    font-size: 4rem;
+    color: white;
+  }
+  .name1 {
+    height: 100vh;
+    margin: 10vh 0 0;
+  }
+  .Abschnit2 {
+    display: flex;
+    flex-direction: column;
+  }
+  .p10 {
+    width: 100%;
+  }
+  .myFoto {
+    position: relative;
+    width: 400px;
+    height: 400px;
+  }
+  .name1Foto {
+    display: flex;
+    flex-direction: column;
+  }
+  .gridcontainer {
+    grid-template-areas: "insta insta teleg " "twit tub tub" "kont kont kont";
+    gap: 10px;
+  }
+  .myFoto2 {
+    width: 400px;
+    height: 600px;
+  }
+  .dienstleistungen {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+
+    margin: 20px auto;
+  }
+}
+@media screen and (max-width: 768px) {
+  .myFoto {
+    position: relative;
+  }
+  .name1Foto {
+    display: flex;
+    flex-direction: column;
+  }
+  .gridcontainer {
+    grid-template-areas:
+      "insta insta"
+      "tub tub"
+      "teleg twit"
+      "kont kont";
+
+    gap: 10px;
+  }
+  .dienstleistungen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+    margin: 20px auto;
+  }
+}
